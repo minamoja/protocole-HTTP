@@ -1,0 +1,45 @@
+
+
+### GET all wilders ***************************************
+GET https://http-practice.herokuapp.com/wilders
+
+
+### GET page 2 PHP      ************************************
+GET https://http-practice.herokuapp.com/wilders?page=2&language=PHP
+
+
+### POST URL-encoded    ************************************
+POST https://http-practice.herokuapp.com/wilders?
+Content-Type: application/x-www-form-urlencoded
+
+name=Joe%20Bidon&language=PHP
+
+### POST json   ********************************************
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+    "name": "Rascar Capac",
+    "language": "JavaScript"
+}
+
+### GET wilder créé ****************************************
+GET https://http-practice.herokuapp.com/wilders/1646510
+
+### PUT wilder créé modifié en json
+PUT https://http-practice.herokuapp.com/wilders/1646499
+Content-Type: application/json
+
+{
+    "name": "Hubert DeLabatte",
+    "language": "JavaScript"
+}
+
+### PUT en URL-encoded  ************************************
+PUT https://http-practice.herokuapp.com/wilders/1646500
+Content-Type: application/x-www-form-urlencoded
+
+name=Louis%20LaBrocante&language=PHP
+
+### DELETE wilder créé  ***********************************
+DELETE https://http-practice.herokuapp.com/wilders/1646500
